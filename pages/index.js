@@ -8,12 +8,10 @@ export default function Home() {
         <title>Andrea Rodriguez</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
+      <header className="sticky top-0 z-50">
         <Header />
       </header>
-      <main>
-        <Main />
-      </main>
+      <Main />
     </div>
   );
 }
