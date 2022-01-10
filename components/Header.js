@@ -6,7 +6,7 @@ function Header() {
   const router = useRouter();
   const [showSidebar, setShowSidebar] = useState(false);
   return (
-    <div className="w-screen flex flex-grow h-16 shadow-lg  items-center bg-white">
+    <div className="min-w-screen flex flex-grow h-16 shadow-lg  items-center bg-white">
       <h2 className="text-xl font-semibold ml-5 lg:ml-36">Andrea Rodriguez</h2>
       <div className="text-xs space-x-4 font-semibold absolute right-36 items-center text-gray-800 hidden lg:inline-flex">
         <p
@@ -50,7 +50,7 @@ function Header() {
 
       <div
         onClick={() => setShowSidebar(false)}
-        className={`top-0 right-0 w-[30vw] bg-black opacity-90 pl-5 pt-6 text-white fixed h-full z-40  ease-in-out duration-500 ${
+        className={`top-0 right-0 w-[15rem] bg-black opacity-90 pl-5 pt-6 text-white fixed h-full z-40  ease-in-out duration-500 md:hidden ${
           showSidebar ? "translate-x-0 " : "translate-x-full"
         }`}
       >
