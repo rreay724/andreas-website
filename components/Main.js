@@ -1,7 +1,7 @@
 function Profile() {
   return (
     <div>
-      <div className="flex h-[35rem] bg-blue-50 justify-center">
+      <div className="flex h-[42rem] bg-[#f3f9fe] justify-center">
         <div className="space-y-4 mr-20 items-center mt-36">
           <h2 className="text-2xl font-semibold">Andrea Rodriguez</h2>
           <p className="text-gray-500">
@@ -17,8 +17,8 @@ function Profile() {
           alt=""
         />
       </div>
-      <div className="h-[35rem] bg-white border-t border-gray-300 w-[70rem]">
-        <div className="mx-auto px-10 py-10 mt-20">
+      <div className="h-[33rem] bg-white border-t-1 border-gray-300">
+        <div className="px-52 py-10 mt-20 justify-center w-full ">
           <h1 className="text-[35px] font-semibold">PERSONAL DETAILS</h1>
           <div className="flex space-x-5 ">
             <div className="border-l-2 border-blue-500 h-[12rem]" />
