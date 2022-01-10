@@ -7,7 +7,7 @@ function Header() {
   const [showSidebar, setShowSidebar] = useState(false);
   return (
     <div className="w-screen flex flex-grow h-16 shadow-lg  items-center bg-white">
-      <h2 className="text-xl font-semibold ml-10 lg:ml-36">Andrea Rodriguez</h2>
+      <h2 className="text-xl font-semibold ml-5 lg:ml-36">Andrea Rodriguez</h2>
       <div className="text-xs space-x-4 font-semibold absolute right-36 items-center text-gray-800 hidden lg:inline-flex">
         <p
           className="cursor-pointer hover:text-blue-300 transition transform duration-300 ease-in-out"
@@ -55,16 +55,28 @@ function Header() {
         }`}
       >
         <div className="text-sm space-y-5">
-          <p className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out">
+          <p
+            className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out"
+            onClick={() => router.push("/")}
+          >
             HOME
           </p>
-          <p className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out">
+          <p
+            className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out"
+            onClick={() => router.push("/about")}
+          >
             ABOUT
           </p>
-          <p className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out">
+          <p
+            className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out"
+            onClick={() => router.push("/portfolio")}
+          >
             PORTFOLIO
           </p>
-          <p className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out">
+          <p
+            className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out"
+            onClick={() => router.push("/contact")}
+          >
             CONTACT
           </p>
           <p className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out">
