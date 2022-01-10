@@ -17,11 +17,11 @@ function Profile() {
           alt=""
         />
       </div>
-      <div className="h-[35rem] bg-white border-t border-gray-300">
-        <div className="ml-10 w-[80rem] mt-20">
+      <div className="h-[35rem] bg-white border-t border-gray-300 w-[70rem]">
+        <div className="mx-auto px-10 py-10 mt-20">
           <h1 className="text-[35px] font-semibold">PERSONAL DETAILS</h1>
-          <div className="flex space-x-5 h-48">
-            <div className="border-l-2 border-blue-500" />
+          <div className="flex space-x-5 ">
+            <div className="border-l-2 border-blue-500 h-[12rem]" />
             <p className="items-center pt-5">
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
@@ -37,9 +37,11 @@ function Profile() {
               ipsum dolor sit amet..", comes from a line in section 1.10.32.
             </p>
           </div>
-          <button className="mt-5 border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
-            ABOUT ME
-          </button>
+          <div className="mt-2">
+            <button className="mt-5 border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
+              ABOUT ME
+            </button>
+          </div>
         </div>
       </div>
       <div className="h-[35rem] bg-white border-t border-gray-300 text-center">

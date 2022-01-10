@@ -3,7 +3,7 @@ import { MenuIcon } from "@heroicons/react/solid";
 
 function Header() {
   return (
-    <div className="w-screen flex h-16 shadow-lg sticky top-0 items-center">
+    <div className="w-screen flex flex-grow h-16 shadow-lg sticky top-0 items-center">
       <h2 className="text-xl font-semibold ml-36">Andrea Rodriguez</h2>
       <div className="text-xs flex space-x-4 font-semibold absolute right-36 items-center text-gray-800">
         <p className="cursor-pointer hover:text-blue-300 transition transform duration-300 ease-in-out">
