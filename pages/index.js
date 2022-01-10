@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header, Profile } from "../components/index";
+import { Header, Main } from "../components/index";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <Header />
       </header>
       <main>
-        <Profile />
+        <Main />
       </main>
     </div>
   );
