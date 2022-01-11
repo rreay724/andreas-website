@@ -64,7 +64,7 @@ function Profile() {
               <h4 className="pt-5 font-semibold">Google Tools</h4>
 
               <p className="pt-2 text-gray-400">
-                Google Analyticcs, Google Tag Manager, Google Ads
+                Google Analytics, Google Tag Manager, Google Ads
               </p>
             </div>
             <div className="mx-auto justify-center w-52 pt-10">
