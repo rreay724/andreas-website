@@ -13,8 +13,8 @@ function Footer() {
       <div className="md:w-72 pt-3 md:pt-0 px-3 md:px-0">
         <h2 className="font-semibold text-white text-lg">About This Page</h2>
         <p className="text-gray-500 pt-5">
-          This website was coded by Bobby Reay as a Next JS application and
-          based off a theme from Colorlib.
+          This website was coded by Bobby Reay as a Next JS application using
+          Tailwind CSS styling.
         </p>
       </div>
       <div className="md:w-72 md:ml-20 pt-3 md:pt-0 px-3 md:px-0">
@@ -28,11 +28,12 @@ function Footer() {
           >
             here
           </a>
+          .
         </p>
       </div>
       <div className="md:w-72 md:ml-20 pt-3 md:pt-0 px-3 md:px-0">
         <h2 className="font-semibold text-white text-lg">Follow Me</h2>
-        <p className="text-gray-500 pt-5">Connect with me on LinkedIn</p>
+        <p className="text-gray-500 pt-5">Connect with me on LinkedIn.</p>
         <div className="text-white pt-5">
           <BsLinkedin
             className="cursor-pointer"

@@ -16,7 +16,7 @@ function Profile() {
             Sample text to tell everyone how awesome you are.
           </p>
           <div className="py-4 lg:py-2">
-            <button className="border bg-gradient-to-b from-blue-400 to-blue-300 shadow-md px-3 xs:px-8 lg:px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
+            <button className="border bg-gradient-to-r from-blue-500 to-blue-400 shadow-md px-3 xs:px-8 lg:px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
               MY PROJECTS
             </button>
           </div>
@@ -48,7 +48,7 @@ function Profile() {
             </p>
           </div>
           <div className="mt-2">
-            <button className="bg-gradient-to-b from-blue-400 to-blue-300 shadow-md mt-5 border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
+            <button className="bg-gradient-to-r from-blue-500 to-blue-400 shadow-md mt-5 border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
               ABOUT ME
             </button>
           </div>
