@@ -9,23 +9,21 @@ import { RiTwitterLine, RiMicrosoftLine } from "react-icons/ri";
 function Profile() {
   return (
     <div className="min-w-scren">
-      <div className="md:flex lg:h-[42rem] bg-[#f3f9fe] justify-center">
+      <div className="md:flex lg:h-[42rem] bg-[#f3f9fe] justify-center pl-5 md:pl-none pb-10 lg:pb-0">
         <div className="space-y-2 md:space-y-4 ml-1 mr-10 lg:mr-20 items-center lg:mt-36">
-          <h2 className="hidden lg:inline-block text-2xl font-semibold">
-            Andrea Rodriguez
-          </h2>
+          <h2 className="pt-3 text-2xl font-semibold">Andrea Rodriguez</h2>
           <p className="text-gray-500">
             Sample text to tell everyone how awesome you are.
           </p>
-          <div className="pb-2">
-            <button className="border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
+          <div className="py-4 lg:py-2">
+            <button className="border bg-gradient-to-b from-blue-400 to-blue-300 shadow-md px-3 xs:px-8 lg:px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
               MY PROJECTS
             </button>
           </div>
         </div>
         <img
           src="/profile_pic.jpeg"
-          className="w-[20rem] h-[20rem] md:w-[35rem] md:h-[35rem] shadow-lg"
+          className="w-[20rem] h-[20rem] md:w-[35rem] md:h-[35rem]"
           alt=""
         />
       </div>
@@ -50,7 +48,7 @@ function Profile() {
             </p>
           </div>
           <div className="mt-2">
-            <button className="mt-5 border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
+            <button className="bg-gradient-to-b from-blue-400 to-blue-300 shadow-md mt-5 border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
               ABOUT ME
             </button>
           </div>
