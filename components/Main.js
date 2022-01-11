@@ -1,3 +1,11 @@
+import { ImGoogle3 } from "react-icons/im";
+import { FaAssistiveListeningSystems } from "react-icons/fa";
+import { MdOutlineDataExploration } from "react-icons/md";
+import { BsMicrosoft } from "react-icons/bs";
+import { SiOracle, SiBandrautomation } from "react-icons/si";
+import { IoStatsChartOutline } from "react-icons/io5";
+import { RiTwitterLine, RiMicrosoftLine } from "react-icons/ri";
+
 function Profile() {
   return (
     <div className="min-w-scren">
@@ -17,7 +25,7 @@ function Profile() {
         </div>
         <img
           src="/profile_pic.jpeg"
-          className="w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] shadow-lg"
+          className="w-[20rem] h-[20rem] md:w-[35rem] md:h-[35rem] shadow-lg"
           alt=""
         />
       </div>
@@ -48,13 +56,50 @@ function Profile() {
           </div>
         </div>
       </div>
-      <div className="h-[35rem] bg-white border-t border-gray-300 text-center">
-        <h1>Areas of Interest</h1>
+      <div className=" bg-white border-t border-gray-300 text-center w-full pt-10 mx-auto justify-center">
+        <h1 className="text-2xl font-bold pt-20">Areas of Expertiece</h1>
         <p>Take a look at my main areas of expertiece</p>
-      </div>
-      <div className="h-[35rem] bg-white border-t border-gray-300 text-center">
-        <h1>Skills</h1>
-        <p>Take a look at my main areas of expertiece</p>
+        <div className=" mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 pb-40 justify-center px-20 lg:px-40">
+            <div className="mx-auto justify-center w-52 pt-10">
+              <ImGoogle3 className="w-full mx-auto h-10" />
+              <h4 className="pt-5 font-semibold">Google Tools</h4>
+
+              <p className="pt-2 text-gray-400">
+                Google Analyticcs, Google Tag Manager, Google Ads
+              </p>
+            </div>
+            <div className="mx-auto justify-center w-52 pt-10">
+              <FaAssistiveListeningSystems className="w-full mx-auto h-10" />
+              <h4 className="pt-5 font-semibold">Social Listening Tools</h4>
+              <p className="pt-1 text-gray-400">
+                Nuvi, Hootsuite, and Meltwater
+              </p>
+            </div>
+            <div className="mx-auto justify-center w-52 pt-10">
+              <RiTwitterLine className="w-full mx-auto h-10" />
+              <h4 className="pt-5 font-semibold">Social Media</h4>
+              <p className="pt-1 text-gray-400">
+                Facebook, Twitter, LinkedIn, Facebook Business Manager
+              </p>
+            </div>
+            <div className="mx-auto justify-center w-52 pt-10">
+              <SiBandrautomation className="w-full mx-auto h-10" />
+              <h4 className="pt-5 font-semibold">Marketing Automation</h4>
+              <p className="pt-2 text-gray-400">Pardot, Eloqua</p>
+            </div>
+            <div className="mx-auto justify-center w-52 pt-10">
+              <IoStatsChartOutline className="w-full mx-auto h-10" />
+              <h4 className="pt-5 font-semibold">Statistical Analysis</h4>
+              <p className="pt-2 text-gray-400">R, Data Studio, Tableau</p>
+            </div>
+            <div className="mx-auto justify-center w-52 pt-10">
+              <RiMicrosoftLine className="w-full mx-auto h-10" />
+              <h4 className="pt-5 font-semibold">Microsoft Office</h4>
+              <p className="pt-2 text-gray-400 pb-5">Word, PowerPoint, Excel</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
