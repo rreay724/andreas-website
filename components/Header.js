@@ -33,11 +33,11 @@ function Header() {
         >
           CONTACT
         </p>
-        <div>
+        {/* <div>
           <p className="cursor-pointer hover:text-white hover:bg-blue-500 text-blue-300 transition transform duration-300 ease-in-out border border-blue-500 rounded-full py-1 px-2">
             RESUME
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="lg:hidden absolute right-5">
         <MenuIcon
@@ -77,9 +77,9 @@ function Header() {
           >
             CONTACT
           </p>
-          <p className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out">
+          {/* <p className="cursor-pointer hover:text-gray-500 transition transform duration-300 ease-in-out">
             RESUME
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

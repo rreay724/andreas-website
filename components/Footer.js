@@ -33,7 +33,7 @@ function Footer() {
       </div>
       <div className="md:w-72 md:ml-20 pt-3 md:pt-0 px-3 md:px-0">
         <h2 className="font-semibold text-white text-lg">Follow Me</h2>
-        <p className="text-gray-500 pt-5">Connect with me on LinkedIn.</p>
+        <p className="text-gray-500 pt-5">Connect with me.</p>
         <div className="text-white pt-5">
           <BsLinkedin
             className="cursor-pointer"
