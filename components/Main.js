@@ -60,7 +60,7 @@ function Profile() {
         <h1 className="text-2xl font-bold pt-20">Areas of Expertiece</h1>
         <p>Take a look at my main areas of expertiece</p>
         <div className=" mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 pb-40 justify-center px-20 lg:px-40">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 pb-40 justify-center px-20 lg:px-40 xl:px-64">
             <div className="mx-auto justify-center w-52 pt-10">
               <ImGoogle3 className="w-full mx-auto h-10" />
               <h4 className="pt-5 font-semibold">Google Tools</h4>
