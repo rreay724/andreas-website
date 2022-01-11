@@ -52,6 +52,10 @@ function Profile() {
         <h1>Areas of Interest</h1>
         <p>Take a look at my main areas of expertiece</p>
       </div>
+      <div className="h-[35rem] bg-white border-t border-gray-300 text-center">
+        <h1>Skills</h1>
+        <p>Take a look at my main areas of expertiece</p>
+      </div>
     </div>
   );
 }
