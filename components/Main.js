@@ -1,28 +1,32 @@
 function Profile() {
   return (
-    <div>
-      <div className="flex h-[42rem] bg-[#f3f9fe] justify-center">
-        <div className="space-y-4 mr-20 items-center mt-36">
-          <h2 className="text-2xl font-semibold">Andrea Rodriguez</h2>
+    <div className="min-w-scren">
+      <div className="md:flex lg:h-[42rem] bg-[#f3f9fe] justify-center">
+        <div className="space-y-2 md:space-y-4 ml-1 mr-10 lg:mr-20 items-center lg:mt-36">
+          <h2 className="hidden lg:inline-block text-2xl font-semibold">
+            Andrea Rodriguez
+          </h2>
           <p className="text-gray-500">
             Sample text to tell everyone how awesome you are.
           </p>
-          <button className="border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
-            MY PROJECTS
-          </button>
+          <div className="pb-2">
+            <button className="border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
+              MY PROJECTS
+            </button>
+          </div>
         </div>
         <img
           src="/profile_pic.jpeg"
-          className="w-[30rem] h-[30rem] shadow-lg"
+          className="w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] shadow-lg"
           alt=""
         />
       </div>
-      <div className="h-[33rem] bg-white border-t-1 border-gray-300">
-        <div className="px-52 py-10 mt-20 justify-center w-full ">
+      <div className="lg:h-[33rem] bg-white border-t-1 border-gray-300">
+        <div className="px-5 lg:px-52 py-10 mt-20 justify-center w-full ">
           <h1 className="text-[35px] font-semibold">PERSONAL DETAILS</h1>
           <div className="flex space-x-5 ">
-            <div className="border-l-2 border-blue-500 h-[12rem]" />
-            <p className="items-center pt-5">
+            <div className="border-l-2 border-blue-500 lg:h-[12rem]" />
+            <p className="items-center pt-5 text-gray-500">
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
               making it over 2000 years old. Richard McClintock, a Latin

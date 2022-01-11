@@ -40,17 +40,15 @@ function Header() {
         </div>
       </div>
       <div className="lg:hidden absolute right-5">
-        {!showSidebar ? (
-          <MenuIcon
-            className="w-5 cursor-pointer"
-            onClick={() => setShowSidebar(true)}
-          />
-        ) : null}
+        <MenuIcon
+          className="w-5 cursor-pointer"
+          onClick={() => setShowSidebar(true)}
+        />
       </div>
 
       <div
         onClick={() => setShowSidebar(false)}
-        className={`top-0 right-0 w-[15rem] bg-black opacity-90 pl-5 pt-6 text-white fixed h-full z-40  ease-in-out duration-500 md:hidden ${
+        className={`top-0 right-0 w-[15rem] bg-black opacity-90 pl-5 pt-6 text-white fixed h-full z-40  ease-in-out duration-500 lg:hidden ${
           showSidebar ? "translate-x-0 " : "translate-x-full"
         }`}
       >
