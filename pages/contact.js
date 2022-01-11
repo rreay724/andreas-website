@@ -37,22 +37,15 @@ function contact() {
             </div>
             <div>
               <input
-                placeholder="Reason for contacting"
-                className="border border-gray-300 rounded-md  h-12 w-[20rem] md:w-[40rem] text-md px-2"
-                type="text"
-              />
-            </div>
-            <div>
-              <input
                 placeholder="Subject"
                 className="border border-gray-300 rounded-md h-12  w-[20rem] md:w-[40rem] text-md px-2"
                 type="text"
               />
             </div>
             <div>
-              <input
+              <textarea
                 placeholder="Message"
-                className="border border-gray-300 rounded-md  h-12 w-[20rem] md:w-[40rem] text-md px-2"
+                className="w-[20rem] md:w-[40rem]  h-24 px-3 py-2  border rounded-md"
                 type="text"
               />
             </div>
