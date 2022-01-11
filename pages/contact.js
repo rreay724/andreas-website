@@ -1,6 +1,44 @@
 import { Header, Footer } from "../components/index";
+import { useState } from "react";
 
 function contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Sending");
+
+    let data = {
+      name,
+      email,
+      subject,
+      message,
+    };
+
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log("Response received");
+      if (res.status === 200) {
+        console.log("Response succeeded!");
+        setSubmitted(true);
+        setName("");
+        setMessage("");
+        setEmail("");
+        setBody("");
+      }
+    });
+  };
+
   return (
     <div className="">
       <header className="sticky top-0 z-50">
@@ -19,13 +57,22 @@ function contact() {
             </div>
           </div>
         </div>
-        <form className="text-center py-40">
-          <div className="space-y-4">
+        <form
+          className="pt-20 pb-40 w-screen grid justify-center"
+          name="contact-form"
+          method="POST"
+          action="contact/?success=true"
+        >
+          <div className="space-y-6">
             <div>
               <input
                 placeholder="Name"
                 className="border border-gray-300 rounded-md h-12 w-[20rem] md:w-[40rem] text-md px-2"
                 type="text"
+                id="name"
+                name="name"
+                required
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div>
@@ -33,6 +80,10 @@ function contact() {
                 placeholder="Your email address"
                 className="border border-gray-300 rounded-md  h-12  w-[20rem] md:w-[40rem] text-md px-2"
                 type="text"
+                id="email"
+                name="email"
+                required
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div>
@@ -40,6 +91,10 @@ function contact() {
                 placeholder="Subject"
                 className="border border-gray-300 rounded-md h-12  w-[20rem] md:w-[40rem] text-md px-2"
                 type="text"
+                id="subject"
+                name="subject"
+                required
+                onChange={(e) => setSubject(e.target.value)}
               />
             </div>
             <div>
@@ -47,9 +102,20 @@ function contact() {
                 placeholder="Message"
                 className="w-[20rem] md:w-[40rem]  h-24 px-3 py-2  border rounded-md"
                 type="text"
+                id="message"
+                name="message"
+                required
+                onChange={(e) => setMessage(e.target.value)}
               />
             </div>
+            <div></div>
           </div>
+          <button
+            className="w-40 h-12 bg-gray-900 text-white rounded-md font-semibold"
+            onClick={(e) => handleSubmit(e)}
+          >
+            Submit
+          </button>
         </form>
       </main>
 
