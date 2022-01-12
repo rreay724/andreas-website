@@ -1,12 +1,12 @@
 import { ImGoogle3 } from "react-icons/im";
 import { FaAssistiveListeningSystems } from "react-icons/fa";
-import { MdOutlineDataExploration } from "react-icons/md";
-import { BsMicrosoft } from "react-icons/bs";
-import { SiOracle, SiBandrautomation } from "react-icons/si";
+import { SiBandrautomation } from "react-icons/si";
 import { IoStatsChartOutline } from "react-icons/io5";
 import { RiTwitterLine, RiMicrosoftLine } from "react-icons/ri";
+import { useRouter } from "next/dist/client/router";
 
 function Profile() {
+  const router = useRouter();
   return (
     <div className="min-w-scren">
       <div className="md:flex lg:h-[42rem] bg-[#f3f9fe] justify-center pl-5 md:pl-none pb-10 lg:pb-0">
@@ -16,7 +16,12 @@ function Profile() {
             Sample text to tell everyone how awesome you are.
           </p>
           <div className="py-4 lg:py-2">
-            <button className="border bg-gradient-to-r from-blue-500 to-blue-400 shadow-md px-3 xs:px-8 lg:px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
+            <button
+              className="border bg-gradient-to-r from-blue-500 to-blue-400 
+            shadow-md px-3 xs:px-8 lg:px-12 py-2 border-none text-white hover:shadow-xl 
+            transition transform duration-300 ease-in-out"
+              onClick={() => router.push("/portfolio")}
+            >
               MY PROJECTS
             </button>
           </div>
@@ -48,7 +53,10 @@ function Profile() {
             </p>
           </div>
           <div className="mt-2">
-            <button className="bg-gradient-to-r from-blue-500 to-blue-400 shadow-md mt-5 border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out">
+            <button
+              className="bg-gradient-to-r from-blue-500 to-blue-400 shadow-md mt-5 border bg-blue-400 px-12 py-2 border-none text-white hover:shadow-xl transition transform duration-300 ease-in-out"
+              onClick={() => router.push("/about")}
+            >
               ABOUT ME
             </button>
           </div>
