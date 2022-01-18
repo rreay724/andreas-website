@@ -1,7 +1,8 @@
 import { Header, Footer } from "../components/index";
 import { useState } from "react";
+import Head from "next/head";
 
-function contact() {
+function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -41,6 +42,7 @@ function contact() {
 
   return (
     <div className="">
+      <Head></Head>
       <header className="sticky top-0 z-50">
         <Header />
       </header>
@@ -98,6 +100,7 @@ function contact() {
                   onChange={(e) => setSubject(e.target.value)}
                 />
               </div>
+
               <div>
                 <textarea
                   placeholder="Message"
@@ -128,4 +131,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;

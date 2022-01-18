@@ -1,5 +1,5 @@
 import { Header } from "../components/index";
-function about() {
+function About() {
   return (
     <div>
       <header className="sticky top-0 z-50">
@@ -10,4 +10,4 @@ function about() {
   );
 }
 
-export default about;
+export default About;

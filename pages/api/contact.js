@@ -6,15 +6,15 @@ export default function (req, res) {
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user: process.env.REACT_APP_GMAIL_USERNAME,
-      pass: process.env.REACT_APP_GMAIL_PASSWORD,
+      user: process.env.NEXT_PUBLIC_GMAIL_USERNAME,
+      pass: process.env.NEXT_PUBLIC_GMAIL_PASSWORD,
     },
     secure: true,
   });
 
   const mailData = {
     from: req.body.email,
-    to: process.env.REACT_APP_GMAIL_USERNAME,
+    to: process.env.NEXT_PUBLIC_GMAIL_USERNAME,
     subject: req.body.subject,
     text: req.body.message + " | Sent from: " + req.body.email,
     html: `<div>${req.body.message}</div><p>Sent from:
