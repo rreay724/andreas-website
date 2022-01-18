@@ -1,8 +1,5 @@
 import Head from "next/head";
 import { Header, Main, Footer } from "../components/index";
-import { useState } from "react";
-
-import * as ga from "../lib/ga";
 
 export default function Home() {
   return (
