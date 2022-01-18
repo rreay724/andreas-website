@@ -1,6 +1,6 @@
 import { Header } from "../components/index";
 
-function portfolio() {
+function Portfolio() {
   return (
     <div>
       <header className="sticky top-0 z-50">
@@ -11,4 +11,4 @@ function portfolio() {
   );
 }
 
-export default portfolio;
+export default Portfolio;
