@@ -24,11 +24,8 @@ export default function Home() {
           }}
         />
       </Head>
-      <header className="sticky top-0 z-50 ">
-        <Header />
-      </header>
+      <header className="sticky top-0 z-50 "></header>
       <Main />
-      <Footer />
     </div>
   );
 }
