@@ -1,8 +1,5 @@
 import Head from "next/head";
 import { Header, Main, Footer } from "../components/index";
-import { useState } from "react";
-
-import * as ga from "../lib/ga";
 
 export default function Home() {
   return (
@@ -27,11 +24,8 @@ export default function Home() {
           }}
         />
       </Head>
-      <header className="sticky top-0 z-50 ">
-        <Header />
-      </header>
+      <header className="sticky top-0 z-50 "></header>
       <Main />
-      <Footer />
     </div>
   );
 }

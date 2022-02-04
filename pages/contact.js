@@ -1,4 +1,3 @@
-import { Header, Footer } from "../components/index";
 import { useState } from "react";
 import Head from "next/head";
 
@@ -42,10 +41,25 @@ function Contact() {
 
   return (
     <div className="">
-      <Head></Head>
-      <header className="sticky top-0 z-50">
-        <Header />
-      </header>
+      <Head>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
+      </Head>
+
       <main>
         <div className="bg-gradient-to-l from-blue-400 to-blue-200 h-[30rem] ">
           <div className="text-center pt-48">
@@ -100,6 +114,33 @@ function Contact() {
                   onChange={(e) => setSubject(e.target.value)}
                 />
               </div>
+              <div>
+                <input
+                  placeholder="Country"
+                  className="border border-gray-300 rounded-md h-12  w-[20rem] md:w-[40rem] text-md px-2"
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  onChange={(e) => setSubject(e.target.value)}
+                />
+              </div>
+              <div>
+                <input
+                  placeholder="State"
+                  className="border border-gray-300 rounded-md h-12  w-[20rem] md:w-[40rem] text-md px-2"
+                  type="text"
+                  list="listid"
+                  id="subject"
+                  name="subject"
+                  required
+                  onChange={(e) => setSubject(e.target.value)}
+                />
+                <datalist id="listid">
+                  <option label="label1" value="value1" />
+                  <option label="label2" value="value2" />
+                </datalist>
+              </div>
 
               <div>
                 <textarea
@@ -125,8 +166,6 @@ function Contact() {
           <h1>Thanks for your submission!</h1>
         )}
       </main>
-
-      <Footer />
     </div>
   );
 }

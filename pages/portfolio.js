@@ -1,14 +1,5 @@
-import { Header } from "../components/index";
-
 function Portfolio() {
-  return (
-    <div>
-      <header className="sticky top-0 z-50">
-        <Header />
-      </header>
-      PORTFOLIO PAGE
-    </div>
-  );
+  return <div>PORTFOLIO PAGE</div>;
 }
 
 export default Portfolio;
